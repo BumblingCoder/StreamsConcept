@@ -2,7 +2,10 @@ import qbs
 
 CppApplication {
     consoleApplication: true
-    files: "main.cpp"
+    files: [
+        "*.cpp",
+        "*.h"
+    ]
     cpp.cxxLanguageVersion: "c++14"
     cpp.cxxFlags: "-fconcepts"
 
